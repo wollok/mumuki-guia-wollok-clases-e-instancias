@@ -1,3 +1,5 @@
 ¡Ya conocemos todo lo necesario acerca de las clases! :tada:
 
-Recordá que sirven para generalizar comportamiento idéntico entre objetos: si no es exactamente igual, es necesario crear una nueva clase, como hicimos con Zombi y SuperZombi, o con Sobreviviente y Aliado. En esos casos tuvimos que repetir parte de la lógica que coincidía entre las clases; pronto aprenderemos una alternativa. :wink: 
+Recordá que sirven para generalizar comportamiento idéntico entre objetos: en vez de declarar varios bien conocidos objetos uno por uno y repetir lógica, podemos declarar una clase y obtener los objetos **instanciando** la clase.
+
+¿Pero qué pasaría si necesitamos objetos que sean parecidos en algunos aspectos de su comportamiento y distintos en otros? Pronto vamos a llegar a eso. :wink:
