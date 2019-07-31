@@ -1,4 +1,5 @@
-Los números entienden el mensaje `times` que recibe un bloque para saber qué hacer, por ejemplo:
+- La `invasion` ya define su `tamanio` en base a la cantidad de zombis vivos que tiene.
+- Los números entienden el mensaje `times` que recibe un bloque para saber qué hacer, por ejemplo:
 
 ```wollok
 5.times {numero => pepita.volar(numero)}

@@ -29,4 +29,4 @@ object vivero {
 >
 > - Su atributo caminantes se inicialice con una colección con un único elemento: una instancia nueva de la clase `Zombi`.
 >
-> - Cuando le mandemos el mensaje `crecer` a la invasión deberían agregarse nuevos zombies a su colección de caminantes de modo que aumente su tamaño en 5 veces su tamaño actual. La primera vez que crezca debería quedar con 6 caminantes, luego con 36, etc.
+> - Cuando le mandemos el mensaje `crecer` a la invasión debería aumentar su tamaño como consecuencia de agregar nuevos zombies a su colección de caminantes. Deberían agregarse 5 zombis por cada zombi vivo que tenga.
