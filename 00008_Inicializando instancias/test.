@@ -13,5 +13,5 @@
 
 	test "Si Anastasia ataca con 5 puntos de daño a Kiki, su salud disminuye en 5 puntos, porque está cansada" {
 		anastasia.atacar(kiki, 5)
-		assert.equals(95, bouba.salud())
+		assert.equals(95, kiki.salud())
 	}
