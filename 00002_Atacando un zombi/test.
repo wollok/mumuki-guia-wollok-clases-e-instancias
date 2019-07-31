@@ -1,0 +1,20 @@
+
+test "La energía inicial de Juliana es 1000" {
+	assert.equals(1000, juliana.energia())
+}
+
+test "Si Juliana ataca con 5 puntos de daño a Bouba su salud disminuye en 10 puntos" {
+	juliana.atacar(bouba, 5)
+	assert.equals(90, bouba.salud())
+}
+
+test "Si Juliana ataca con 5 puntos de daño a Bouba estando cansada, su salud disminuye en 5 puntos" {
+	juliana.energia(199)
+	juliana.atacar(bouba, 5)
+	assert.equals(95, bouba.salud())
+}
+
+test "Si Juliana ataca a Bouba con mucho daño su salud no puede ser menor a 0" {
+	juliana.atacar(bouba, 69)
+	assert.equals(0, bouba.salud())
+}
