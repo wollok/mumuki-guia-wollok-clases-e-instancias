@@ -5,6 +5,7 @@ Los números entienden el mensaje `times` que recibe un bloque para saber qué h
 ```
 
 Eso es equivalente a:
+
 ```wollok
 pepita.volar(1)
 pepita.volar(2)
