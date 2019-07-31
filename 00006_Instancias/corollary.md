@@ -1,1 +1,1 @@
-Hasta ahora estuvimos jugando con [objetos bien conocidos](https://staging.mumuki.io/exercises/4281-programacion-con-objetos-referencias-objetos-bien-conocidos), como `pepita`. Pero `bouba` y `celularDeMaria` son constantes que declaramos en el momento: en particular, son referencias que apuntan a **instancias** de `Zombi` y `Celular`.
+Hasta ahora estuvimos jugando con objetos bien conocidos, como `pepita`. Pero `bouba` y `celularDeMaria` son constantes que declaramos en el momento: en particular, son referencias que apuntan a **instancias** de `Zombi` y `Celular`.
