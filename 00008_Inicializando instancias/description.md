@@ -2,7 +2,7 @@ Como viste recién, la `salud` no se comparte entre `bouba` y `kiki` a pesar de 
 
 Pero nos quedó algo interesante por aclarar: la inicialización. Al trabajar con clases tenemos que *inicializar* los atributos en algún lugar.
 
-Ya sabemos que podemos usar un valor por defecto al igual que hacíamos al declarar objetos, pero también podemos especificar **cómo queremos que se inicialice** la instancia de una clase. Por ejemplo, podemos crear un Zombie que tenga 9000 de salud inicial:
+Ya sabemos que podemos usar un valor por defecto al igual que hacíamos al declarar objetos, pero también podemos especificar **cómo queremos que se inicialice** la instancia de una clase. Por ejemplo, podemos crear un `Zombi` que tenga 9000 de `salud` inicial:
 
 ```wollok
 ム new Zombi(salud = 9000)
