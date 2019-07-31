@@ -13,3 +13,9 @@
 		invasion.crecer()
 		assert.that(invasion.caminantes().all({ caminante => caminante.salud() == 100}))
 	}
+
+	test "Si la invasión tiene caminantes sin vida, estos no se consideran para crecer" {
+		invasion.caminantes().add(new Zombi(salud = 0))
+		invasion.crecer()
+		assert.equals(6, invasion.tamanio())
+	}
