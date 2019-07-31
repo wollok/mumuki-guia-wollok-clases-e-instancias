@@ -25,6 +25,6 @@ object vivero {
 
 ...a pesar de que no tengamos una _referencia_ explícita para cada planta. ¡Puede ocurrir que no necesitemos darle un nombre a cada una!
 
-> Veamos si se entiende: Agregale veinte nuevos zombis a la colección `caminantes`. ¡No olvides que los números entienden el mensaje `times`!
+> Veamos si se entiende: Agregale veinte nuevos zombis a la colección `caminantes`.
 >
-> Luego, agregale un método `ataqueMasivo` a `Sobreviviente`, que reciba una colección de zombis y los ataque a todos con 15 puntos de daño.
+> Luego, agregale un método `ataqueMasivo` a `Sobreviviente`, que reciba una colección de zombis y los ataque a todos con 20 puntos de daño.

@@ -1,0 +1,24 @@
+
+	test "Hay 20 caminantes" {
+		assert.equals(20, caminantes.size())
+	}
+
+	test "Todos los caminantes están vivos" {
+		assert.that(caminantes.all({ caminante => not caminante.sinVida()}))
+	}
+
+	test "Cuando juliana ataca masivamente a los caminantes, les reduce la salud en 40" {
+		juliana.ataqueMasivo(caminantes)
+		assert.that(caminantes.all({ caminante => caminante.salud() == 60}))
+	}
+
+	test "Cuando anastasia ataca masivamente a los caminantes, les reduce la salud en 20" {
+		anastasia.ataqueMasivo(caminantes)
+		assert.that(caminantes.all({ caminante => caminante.salud() == 80}))
+	}
+
+	test "Juliana puede atacar masivamente a otros zombis también" {
+		const otrosZombis = [ new Zombi(salud = 30), new Zombi(salud = 50) ]
+		juliana.ataqueMasivo(otrosZombis)
+		assert.that(otrosZombis.any{ caminante => caminante.sinVida()})
+	}
