@@ -5,7 +5,7 @@ Pero nos quedó algo interesante por aclarar: la inicialización. Al trabajar co
 Ya sabemos que podemos usar un valor por defecto al igual que hacíamos al declarar objetos, pero también podemos especificar **cómo queremos que se inicialice** la instancia de una clase. Por ejemplo, podemos crear un Zombie que tenga 9000 de salud inicial:
 
 ```wollok
-ム new Zombie(salud = 9000)
+ム new Zombi(salud = 9000)
 ```
 
 ¡Es así de fácil! :tada: 
