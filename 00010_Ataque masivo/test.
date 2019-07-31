@@ -15,7 +15,8 @@ const otrosZombis = [ new Zombi(salud = 30), new Zombi(salud = 50) ]
 		assert.that(otrosZombis.any{ caminante => caminante.sinVida()})
 	}
 	
-	test "Cuando juliana ataca masivamente, su energía baja" {
-	  juliana.ataqueMasivo(otrosZombis)
-	  assert.equals(950, juliana.energia())
+	test "Cuando un sobreviviente con 500 de energía ataca masivamente, su energía pasa a ser 450" {
+	  const sobreviviente = new Sobreviviente(energia = 500)
+	  sobreviviente.ataqueMasivo(otrosZombis)
+	  assert.equals(450, sobreviviente.energia())
 	}
