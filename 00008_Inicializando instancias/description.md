@@ -10,6 +10,6 @@ Ya sabemos que podemos usar un valor por defecto al igual que hacíamos al decla
 
 ¡Es así de fácil! :tada: 
 
-> ¡`anastasia` llega para combatir los zombis! Declará una clase `Sobreviviente` que sepa `atacar` zombis y declare un atributo `energia` sin un valor por defecto. Te dejamos en el editor código original de `juliana` para partir de ahí.
+> ¡`anastasia` llega para combatir los zombis! Declará una clase `Sobreviviente` que sepa `atacar` zombis y declare un atributo `energia` como se hacía hasta ahora. Te dejamos en el editor el código original de `juliana` para partir de ahí.
 
-> Luego, definí `juliana` y `anastasia` como instancias de la nueva clase `Sobreviviente` tal que `juliana` tenga 1000 de energía y `anastasia` 700.
+> Luego, definí `juliana` y `anastasia` como instancias de la nueva clase `Sobreviviente` tal que `juliana` tenga 1000 de energía como la `juliana` original y `anastasia` tenga 150 de energía.
