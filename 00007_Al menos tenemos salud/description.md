@@ -1,4 +1,4 @@
-Quizá hayas notado que nuestra clase `Zombi` tiene, al igual que tuvieron los objetos `bouba` y `kiki` en su momento, un atributo `salud`. Seguramente tu `Zombi` se ve similar a este:
+Quizá hayas notado que nuestra clase `Zombi` tiene, al igual que tuvieron los objetos `bouba` y `kiki` en su momento, un atributo `salud`. Posiblemente tu clase `Zombi` se vea similar a esta:
 
 ```wollok
 class Zombi {
