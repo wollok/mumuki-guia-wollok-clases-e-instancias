@@ -25,6 +25,8 @@ object vivero {
 
 ...a pesar de que no tengamos una _referencia_ explícita para cada planta. ¡Puede ocurrir que no necesitemos darle un nombre a cada una!
 
-> Veamos si se entiende: Agregale veinte nuevos zombis a la colección `caminantes`.
+> Veamos si se entiende: te dejamos en el editor un objeto `invasion` para que completes de modo que:
 >
-> Luego, agregale un método `ataqueMasivo` a `Sobreviviente`, que reciba una colección de zombis y los ataque a todos con 20 puntos de daño.
+> - Su atributo caminantes se inicialice con una colección con un único elemento: una instancia nueva de la clase `Zombi`.
+>
+> - Cuando le mandemos el mensaje `crecer` a la invasión deberían agregarse nuevos zombies a su colección de caminantes de modo que aumente su tamaño en 5 veces su tamaño actual. La primera vez que crezca debería quedar con 6 caminantes, luego con 36, etc.
