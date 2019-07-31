@@ -3,7 +3,12 @@ name: Clases e Instancias
 locale: es
 type: learning
 beta: false
-teacher_info: ''
+teacher_info: |-
+  Esta guía fue hecha en base al release 1.8 de Wollok, por ende:
+  - Plantea usar properties para crear atributos
+  - Se usa inicialización directa en vez de constructores
+
+  Eventualmente si se incorpora un método de inicialización para cosas más avanzadas (como ser validaciones en la construcción), tal vez se podría agregar algún ejercicio extra.
 language: wollok
 id_format: "%05d"
 order:
