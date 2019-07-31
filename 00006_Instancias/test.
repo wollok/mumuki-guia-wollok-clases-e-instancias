@@ -16,16 +16,6 @@
 		assert.equals(90, bouba.salud())
 	}
 
-	test "Si Bouba recibe 10 puntos de daño disminuye su salud en 20 puntos" {
-		bouba.recibirDanio(10)
-		assert.equals(80, bouba.salud())
-	}
-
-	test "Si Bouba recibe mucho daño su salud no puede ser menor a 0" {
-		bouba.recibirDanio(69)
-		assert.equals(0, bouba.salud())
-	}
-
 	test "Si Bouba recibe 10 puntos de daño, sigue vivo" {
 		bouba.recibirDanio(10)
 		assert.notThat(bouba.sinVida())
@@ -48,19 +38,9 @@
 		assert.equals(100, kiki.salud())
 	}
 
-	test "Si Kiki recibe 5 puntos de daño disminuye su salud en 10 puntos" {
-		kiki.recibirDanio(5)
-		assert.equals(90, kiki.salud())
-	}
-
 	test "Si Kiki recibe 10 puntos de daño disminuye su salud en 20 puntos" {
 		kiki.recibirDanio(10)
 		assert.equals(80, kiki.salud())
-	}
-
-	test "Si Kiki recibe mucho daño su salud no puede ser menor a 0" {
-		kiki.recibirDanio(69)
-		assert.equals(0, kiki.salud())
 	}
 
 	test "Si Kiki recibe 10 puntos de daño, sigue vivo" {
