@@ -1,1 +1,1 @@
-¡Recordá que el mensaje `atacar` recibe dos parámetros: un zombie y una cantidad de puntos de daño!
+¡Recordá que el mensaje `atacar` recibe un parámetro: un zombie.

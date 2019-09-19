@@ -1,9 +1,9 @@
 ---
 tags: []
-layout: input_bottom
+layout: input_right
 editor: code
 type: problem
-extra_visible: false
+extra_visible: true
 manual_evaluation: false
 choices: []
-name: Otro zombi caminante
+name: Inicializando atributos

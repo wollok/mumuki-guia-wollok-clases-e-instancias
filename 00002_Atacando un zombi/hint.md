@@ -1,6 +1,6 @@
-¿Qué dos cosas tiene que saber `juliana` para poder `atacar`? ¡A quién y con cuánta fuerza!
+¿Qué cosa tiene que recibir `juliana` al `atacar`? ¡A quién atacar!
 
-Podés declarar un atributo de esta forma para que tenga getter y setter:
+Recordá que para que un objeto sin tener que definirlos ya tenga su getter y setter de un atributo, lo declaramos como propiedad:
 
 ```wollok
 var property miAtributo

@@ -2,11 +2,7 @@ Quizá hayas notado que nuestra clase `Zombi` tiene, al igual que tuvieron los o
 
 ```wollok
 class Zombi {
-  var salud = 100
-  
-  method salud() {
-    return salud
-  }
+  var property salud = 100
   
   //...y otros métodos
 }
@@ -14,4 +10,4 @@ class Zombi {
 
 Pero ahora que `salud` aparece en la clase `Zombi`, ¿eso significa que comparten el atributo? Si `juliana` ataca a `bouba`, ¿disminuirá también la salud de `kiki`? :hospital: 
 
-> ¡Averigualo! Hacé que juliana ataque a cada zombi con distintos puntos de daño y luego consultá la salud de ambos.
+> ¡Averigualo! Hacé que juliana ataque a un zombi y luego consultá la salud del otro.

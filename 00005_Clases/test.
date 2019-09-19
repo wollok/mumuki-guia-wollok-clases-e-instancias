@@ -6,10 +6,6 @@ describe "Ejercicio 5" {
 		assert.notThat(zombi.sabeCorrer())
 	}
 
-	test "Un Zombi grita ¡agrrrg!" {
-		assert.equals("¡agrrrg!", zombi.gritar())
-	}
-
 	test "Un Zombi tiene 100 de salud inicialmente" {
 		assert.equals(100, zombi.salud())
 	}
@@ -25,18 +21,18 @@ describe "Ejercicio 5" {
 	}
 
 	test "Si un Zombi recibe mucho daño su salud no puede ser menor a 0" {
-		zombi.recibirDanio(69)
+		zombi.recibirDanio(100)
 		assert.equals(0, zombi.salud())
 	}
 
 	test "Si un Zombi recibe 10 puntos de daño, sigue vivo" {
 		zombi.recibirDanio(10)
-		assert.notThat(zombi.sinVida())
+		assert.that(zombi.vivo())
 	}
 
 	test "Si un Zombi recibe mucho daño, queda sin vida" {
-		zombi.recibirDanio(69)
-		assert.that(zombi.sinVida())
+		zombi.recibirDanio(100)
+		assert.notThat(zombi.vivo())
 	}
 
 }

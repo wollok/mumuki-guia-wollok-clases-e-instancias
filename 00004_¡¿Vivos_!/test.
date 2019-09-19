@@ -3,10 +3,6 @@
 		assert.notThat(bouba.sabeCorrer())
 	}
 
-	test "Bouba grita ¡agrrrg!" {
-		assert.equals("¡agrrrg!", bouba.gritar())
-	}
-
 	test "Bouba tiene 100 de salud inicialmente" {
 		assert.equals(100, bouba.salud())
 	}
@@ -22,26 +18,22 @@
 	}
 
 	test "Si Bouba recibe mucho daño su salud no puede ser menor a 0" {
-		bouba.recibirDanio(69)
+		bouba.recibirDanio(100)
 		assert.equals(0, bouba.salud())
 	}
 
 	test "Si Bouba recibe 10 puntos de daño, sigue vivo" {
 		bouba.recibirDanio(10)
-		assert.notThat(bouba.sinVida())
+		assert.that(bouba.vivo())
 	}
 
 	test "Si Bouba recibe mucho daño, queda sin vida" {
-		bouba.recibirDanio(69)
-		assert.that(bouba.sinVida())
+		bouba.recibirDanio(100)
+		assert.notThat(bouba.vivo())
 	}
 
 	test "Kiki no sabe correr" {
 		assert.notThat(kiki.sabeCorrer())
-	}
-
-	test "Kiki grita ¡agrrrg!" {
-		assert.equals("¡agrrrg!", kiki.gritar())
 	}
 
 	test "Kiki tiene 100 de salud inicialmente" {
@@ -59,17 +51,17 @@
 	}
 
 	test "Si Kiki recibe mucho daño su salud no puede ser menor a 0" {
-		kiki.recibirDanio(69)
+		kiki.recibirDanio(100)
 		assert.equals(0, kiki.salud())
 	}
 
 	test "Si Kiki recibe 10 puntos de daño, sigue vivo" {
 		kiki.recibirDanio(10)
-		assert.notThat(kiki.sinVida())
+		assert.that(kiki.vivo())
 	}
 
 	test "Si Kiki recibe mucho daño, queda sin vida" {
-		kiki.recibirDanio(69)
-		assert.that(kiki.sinVida())
+		kiki.recibirDanio(100)
+		assert.notThat(kiki.vivo())
 	}
 

@@ -2,10 +2,6 @@ test "Bouba no sabe correr" {
 	assert.notThat(bouba.sabeCorrer())
 }
 
-test "Bouba grita ¡agrrrg!" {
-  assert.equals("¡agrrrg!", bouba.gritar())
-}
-  
 test "Bouba tiene 100 de salud inicialmente" {
   assert.equals(100, bouba.salud())
 }

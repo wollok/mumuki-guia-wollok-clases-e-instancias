@@ -1,29 +1,17 @@
 Prometimos una invasión zombi pero sólo tenemos dos :-1: . Ahora que contamos con un molde para crearlos fácilmente, la clase `Zombi`, podemos hacer zombis _de a montones_.
 
-¿Eso significa que tenés que pensar un nombre para referenciar a cada uno? ¡No! Si, por ejemplo, agregamos algunas plantas a un `Vivero`... :hibiscus: :rose: :sunflower:
+¿Eso significa que tenés que pensar un nombre para referenciar a cada uno? ¡No! No necesitamos una referencia para cada uno. El objeto se crea con el new(), según el contexto  vemos si lo queremos asignar en una referencia o si lo usamos para otra cosa. Por ejemplo, a la nueva instancia la podemos poner en una colección, pasarla por parámetro de algun mensaje a otro objeto o simplemente retornarla, si estamos definiendo un método. 
+
+Veamos otros ejemplos de como con otros sobrevivientes que podemos crear.
 
 ```wollok
-vivero.agregarPlanta(new Planta())
-vivero.agregarPlanta(new Planta())
-vivero.agregarPlanta(new Planta())
+const sobrevivientes = [new Sobrviviente(), new Sobreviviente(), new Sobreviviente()]
+ciudad.agregar(new Sobreviviente())
+method crearZombi() { return new Zombi() }
 ```
 
-...y el `vivero` las guarda en una colección `plantas`, luego las podemos regar a todas...
+También podemos instanciar un objeto, utilizarlo y nunca guardarlo ni referenciarlo, con lo cual luego que realizó su tarea lo perdemos. 
 
-
-```wollok
-object vivero {
-  const plantas = []
-  method agregarPlanta(planta){
-    plantas.add(planta)
-  }
-  method regarTodas(){
-    plantas.forEach { planta => planta.regar() }
-  }
-}
-```
-
-...a pesar de que no tengamos una _referencia_ explícita para cada planta. ¡Puede ocurrir que no necesitemos darle un nombre a cada una!
 
 > Veamos si se entiende: te dejamos en el editor un objeto `invasion` para que completes de modo que:
 >

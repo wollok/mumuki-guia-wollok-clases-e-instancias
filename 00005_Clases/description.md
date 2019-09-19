@@ -1,4 +1,4 @@
-Si tenemos más de un objeto que se comporta **exactamente** de la misma forma, lo que podemos hacer es generalizar ese comportamiento declarando una **clase**. Por ejemplo, si tenemos dos celulares con el mismo saldo y ambos tienen las mismas funcionalidades, `realizarLlamada` y `cargarSaldo` :iphone: :
+Si tenemos más de un objeto que se comporta **exactamente** de la misma forma, lo que podemos hacer es generalizar ese comportamiento declarando una **clase**. Por ejemplo, si tenemos dos celulares con el mismo saldo inicial y ambos tienen las mismas funcionalidades, `realizarLlamada` y `cargarSaldo` :iphone: con la misma implementación:
 
 ```wollok
 object celularDeMaria {
