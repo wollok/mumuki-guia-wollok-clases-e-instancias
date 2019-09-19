@@ -1,13 +1,11 @@
 object invasion {
-	const property caminantes // Inicializar acá
+	const property zombis // Inicializar acá
 	
 	method tamanio() {
-		const caminantesVivos 
-		  = self.caminantes().filter({caminante => not caminante.sinVida()})
-		return caminantesVivos.size()
+		return zombis.count({zombi => zombi.vivo()})
 	}
 	
-	method crecer(){
+	method incrementar(){
 		// Completar acá
 	}
 }

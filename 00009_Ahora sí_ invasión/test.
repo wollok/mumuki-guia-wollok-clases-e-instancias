@@ -3,19 +3,19 @@
 		assert.equals(1, invasion.tamanio())
 	}
 	
-	test "Luego de crecer dos veces la invasión tiene tamaño 36" {
-		invasion.crecer()
-		invasion.crecer()
-		assert.equals(36, invasion.tamanio())
+	test "Luego de crecer dos veces la invasión tiene tamaño 4" {
+		invasion.incrementar()
+		invasion.incrementar()
+		assert.equals(4, invasion.tamanio())
 	}
 
 	test "Luego de crecer, todos los caminantes tienen 100 de salud" {
-		invasion.crecer()
+		invasion.incrementar()
 		assert.that(invasion.caminantes().all({ caminante => caminante.salud() == 100}))
 	}
 
 	test "Si la invasión tiene caminantes sin vida, estos no se consideran para crecer" {
-		invasion.caminantes().add(new Zombi(salud = 0))
-		invasion.crecer()
-		assert.equals(6, invasion.tamanio())
+		invasion.zombis().add(new Zombi(salud = 0))
+		invasion.incrementar()
+		assert.equals(2, invasion.tamanio())
 	}
