@@ -2,7 +2,7 @@
 
 Por lo tanto, los casos en los que un objeto puede conocer a otro son:
 
-* Cuando es un **objeto bien conocido**, como con los que veníamos trabajando hasta ahora.
-* Cuando el objeto se pasa por parámetro en un mensaje, por ejemplo `juliana.atacar(bouba, 4)` hace que `juliana` conozca tanto a `bouba` como al `4` durante la ejecución de `atacar`.
+* Cuando es un **objeto autodefinido**, como con los que veníamos trabajando hasta ahora.
+* Cuando el objeto se pasa por parámetro en un mensaje, por ejemplo `juliana.atacar(bouba)` hace que `juliana` conozca a `bouba` durante la ejecución de `atacar`.
 * Cuando tiene un atributo que haga referencia a ese objeto.
 * Cuando un objeto crea otro usando `new`.

@@ -4,7 +4,7 @@ Prometimos una invasión zombi pero sólo tenemos dos :-1: . Ahora que contamos 
 Veamos algunos ejemplos:
 
 ```wollok
-const sobrevivientes = [new Sobrviviente(), new Sobreviviente(), new Sobreviviente()]
+const sobrevivientes = [new Sobreviviente(), new Sobreviviente(), new Sobreviviente()]
 ciudad.agregar( new Sobreviviente() )
 method crearZombi() { return new Zombi() }
 ```
@@ -26,3 +26,5 @@ Creamos un sobreviviente nuevo con el único objetivo de que ataque a bouba. Lue
 > - Su atributo zombies se inicialice con una colección con un único elemento: una instancia nueva de la clase `Zombi`.
 >
 > - Cuando le mandemos el mensaje `incrementar` a la invasión debería aumentar su tamaño como consecuencia de agregar nuevos zombies a su colección. Debería agregarse un nuevo zombis por cada zombi vivo que tenga.
+>
+> El metodo `tamanio` te lo damos resuelto :thumbsup:

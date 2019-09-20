@@ -1,1 +1,0 @@
-Recordar el método `count()` de colecciones, que cuenta los elementos de una lista teniendo en cuenta una condición.

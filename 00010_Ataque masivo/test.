@@ -1,13 +1,13 @@
-const otrosZombis = [ new Zombi(salud = 30), new Zombi(salud = 50) ]
+const otrosZombis = [ new Zombi(salud = 10), new Zombi(salud = 50) ]
 
-	test "Cuando juliana ataca masivamente a los caminantes, les reduce la salud en 40" {
+	test "Cuando juliana ataca masivamente a los zombis, les reduce la salud en 20" {
 		juliana.ataqueMasivo(invasion.zombis())
-		assert.that(invasion.zombis().all({ zombi => zombi.salud() == 60}))
+		assert.that(invasion.zombis().all({ zombi => zombi.salud() == 80}))
 	}
 
-	test "Cuando anastasia ataca masivamente a los caminantes, les reduce la salud en 20" {
+	test "Cuando anastasia ataca masivamente a los caminantes, les reduce la salud en 30" {
 		anastasia.ataqueMasivo(invasion.zombis())
-		assert.that(invasion.zombis().all({ zombi => zombi.salud() == 80}))
+		assert.that(invasion.zombis().all({ zombi => zombi.salud() == 70}))
 	}
 
 	test "Juliana puede atacar masivamente a otros zombis también" {
