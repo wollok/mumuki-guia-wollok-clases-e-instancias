@@ -11,10 +11,10 @@
 
 	test "Luego de crecer, todos los caminantes tienen 100 de salud" {
 		invasion.incrementar()
-		assert.that(invasion.caminantes().all({ caminante => caminante.salud() == 100}))
+		assert.that(invasion.zombis().all({ zombi => zombi.salud() == 100}))
 	}
 
-	test "Si la invasión tiene caminantes sin vida, estos no se consideran para crecer" {
+	test "Si la invasión tiene zombis sin vida, estos no se consideran para incrementar" {
 		invasion.zombis().add(new Zombi(salud = 0))
 		invasion.incrementar()
 		assert.equals(2, invasion.tamanio())
