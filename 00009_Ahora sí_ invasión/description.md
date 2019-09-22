@@ -9,7 +9,7 @@ ciudad.agregar( new Sobreviviente() )
 method crearZombi() { return new Zombi() }
 ```
 
-También podemos instanciar un objeto, utilizarlo y nunca guardarlo ni referenciarlo, con lo cual luego que realizó su tarea lo perdemos. 
+También podemos instanciar un objeto, utilizarlo y nunca guardarlo ni referenciarlo, con lo cual luego que realizó su tarea lo perdemos.
 Por ejemplo: 
 
 ```wollok
